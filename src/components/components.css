@@ -1,0 +1,49 @@
+.card-grow {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-grow-active {
+    transform: scale(1.05); /* Scale up when active */
+  }
+
+  .fade-in {
+    animation: fadeIn 3s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating-image {
+    animation: rotate 10s linear infinite; 
+    display: block;
+    margin: auto;
+    width: 81%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  
+  .belowborder {
+    text-align: left;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .belowborder:last-child {
+    border-bottom: none;
+  }
